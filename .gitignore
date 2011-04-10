@@ -1,5 +1,8 @@
 .gradle/
 build/
 0_localrepository/
+.idea/
+out/
+*.iml
 
 
