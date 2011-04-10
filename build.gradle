@@ -1,15 +1,21 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'application'
 
 repositories {
     mavenCentral()
+	flatDir name: 'localRepository', dirs: '0_localrepository'
 }
 
 dependencies {
+	compile group:'', name: 'coherence', version: ''
 	testCompile 'junit:junit:4.8'
 }
 
 sourceCompatibility = 1.5
 
 version = '1.0'
+
+mainClassName = 'org.svenehrke.checkout.coherence.MyFirstSample'
+
 
